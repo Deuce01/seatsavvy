@@ -50,7 +50,7 @@ require_once('partials/_head.php');
                                 </thead><!-- For more projects: Visit codeastro.com  -->
                                 <tbody>
                                     <?php
-                                    $ret = "SELECT * FROM  rpos_orders WHERE order_status = 'Paid' ORDER BY `rpos_orders`.`created_at` DESC  ";
+                                    $ret = "SELECT * FROM  spos_orders WHERE order_status = 'Paid' ORDER BY `spos_orders`.`created_at` DESC  ";
                                     $stmt = $mysqli->prepare($ret);
                                     $stmt->execute();
                                     $res = $stmt->get_result();
