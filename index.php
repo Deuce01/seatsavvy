@@ -4,77 +4,62 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SeatSavvy</title>
 
-    <title>SEATSAVVY</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Styles -->
-    <style>
-        html,
-        body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Nunito', sans-serif;
-            font-weight: 200;
-            height: 100vh;
-            margin: 0;
+    <!-- Custom Theme Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2D3748', // Dark Charcoal
+                        accent: '#F59E0B',   // Amber for a warm touch
+                        softAccent: '#F7D1A6', // Soft light amber for a calming effect
+                        background: '#F3F4F6'  // Subtle off-white for a sophisticated look
+                    },
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif']
+                    }
+                }
+            }
         }
-
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links>a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-    </style>
+    </script>
 </head>
 
-<body>
-    <div class="flex-center position-ref full-height">
-        <div class="content">
-            <div class="title m-b-md">
-                seatsavvy POS
+<body class="bg-gradient-to-br from-background to-gray-200 font-sans text-gray-700">
+
+    <!-- Background Animation for Ambient Feel -->
+    <div class="absolute inset-0 bg-gradient-to-br from-transparent via-primary to-softAccent opacity-20"></div>
+
+    <div class="flex items-center justify-center h-screen relative z-10">
+        <div class="text-center">
+            <h1 class="text-6xl font-extrabold text-primary drop-shadow-lg mb-4">
+                SeatSavvy <span class="text-accent">POS</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-8">Smart Table Reservation for Your Perfect Dining Experience</p>
+
+            <!-- Buttons with Artistic Hover Effects -->
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="admin" class="px-8 py-4 bg-primary text-white font-semibold rounded-full shadow-lg hover:bg-gray-800 transition duration-500 ease-in-out transform hover:scale-105">
+                    Admin
+                </a>
+                <a href="cashier" class="px-8 py-4 bg-accent text-white font-semibold rounded-full shadow-lg hover:bg-amber-600 transition duration-500 ease-in-out transform hover:scale-105">
+                    Cashier
+                </a>
+                <a href="customer" class="px-8 py-4 border border-gray-400 text-gray-700 font-semibold rounded-full hover:bg-softAccent transition duration-500 ease-in-out transform hover:scale-105">
+                    Customer
+                </a>
             </div>
 
-            <div class="link">
-			 <a href="customer">Customer Log In</a>
+            <!-- Footer with Subtle Gradient and Shadows -->
+            <div class="mt-16 text-gray-500 text-sm">
+                <p>© 2025 SeatSavvy - All Rights Reserved</p>
             </div>
         </div>
     </div>
