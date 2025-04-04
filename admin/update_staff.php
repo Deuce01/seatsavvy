@@ -45,7 +45,7 @@ require_once('partials/_head.php');
     <?php
     require_once('partials/_topnav.php');
     $update = $_GET['update'];
-    $ret = "SELECT * FROM  rpos_staff WHERE staff_id = '$update' ";
+    $ret = "SELECT * FROM  spos_staff WHERE staff_id = '$update' ";
     $stmt = $mysqli->prepare($ret);
     $stmt->execute();
     $res = $stmt->get_result();
