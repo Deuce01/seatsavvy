@@ -23,6 +23,9 @@ require_once('partials/_analytics.php');
     <div style="background-image: url(../admin/assets/img/theme/restro00.jpg); background-size: cover;" class="header  pb-8 pt-5 pt-md-8">
       <span class="mask bg-gradient-dark opacity-8"></span>
       <div class="container-fluid">
+      <a href="booking.php" class="btn inline-block px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105">Make a Booking</a>
+
+
         <div class="header-body">
           <!-- Card stats -->
           <div class="row">

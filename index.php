@@ -14,22 +14,22 @@
 
     <!-- Custom Theme Colors -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#2D3748', // Dark Charcoal
-                        accent: '#F59E0B',   // Amber for a warm touch
-                        softAccent: '#F7D1A6', // Soft light amber for a calming effect
-                        background: '#F3F4F6'  // Subtle off-white for a sophisticated look
-                    },
-                    fontFamily: {
-                        sans: ['Nunito', 'sans-serif']
-                    }
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#2D3748',
+                    accent: '#F59E0B',
+                    softAccent: '#F7D1A6',
+                    background: '#F3F4F6'
+                },
+                fontFamily: {
+                    sans: ['ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif']
                 }
             }
         }
-    </script>
+    }
+</script>
 </head>
 
 <body class="bg-gradient-to-br from-background to-gray-200 font-sans text-gray-700">
